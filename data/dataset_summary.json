@@ -1,0 +1,35 @@
+{
+  "total_records": 10000,
+  "features_count": 18,
+  "tier_distribution": {
+    "Medium": 4129,
+    "High": 2644,
+    "Low": 2522,
+    "Viral (Top 10%)": 705
+  },
+  "niche_distribution": {
+    "Tech & AI": 1785,
+    "Comedy & Skits": 1706,
+    "Fitness & Wellness": 1588,
+    "Finance & Business": 1353,
+    "Lifestyle & Vlog": 1330,
+    "Education & How-To": 1263,
+    "Beauty & Fashion": 975
+  },
+  "platform_distribution": {
+    "TikTok": 4454,
+    "Instagram Reels": 3538,
+    "YouTube Shorts": 2008
+  },
+  "hook_distribution": {
+    "Visual Shock": 2034,
+    "Bold Statement": 1800,
+    "Question": 1600,
+    "Storytelling": 1423,
+    "Listicle": 1189,
+    "Curiosity Gap": 985,
+    "Challenge/Dare": 969
+  },
+  "mean_engagement_score": 46.97,
+  "median_engagement_score": 46.83
+}

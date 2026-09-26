@@ -1,0 +1,249 @@
+{
+  "model_type": "RandomForestClassifier",
+  "n_estimators": 120,
+  "n_training_records": 10000,
+  "test_accuracy": 0.6205,
+  "weighted_f1": 0.6212,
+  "macro_f1": 0.6087,
+  "classes": [
+    "Low",
+    "Medium",
+    "High",
+    "Viral (Top 10%)"
+  ],
+  "categorical_features": [
+    "hook_type",
+    "target_platform",
+    "content_niche",
+    "posting_day",
+    "creator_follower_tier",
+    "video_resolution_quality"
+  ],
+  "numerical_features": [
+    "video_length",
+    "speech_tempo_wpm",
+    "cut_frequency_per_min",
+    "visual_hook_retention_score",
+    "has_trending_audio",
+    "sound_popularity_index",
+    "face_presence",
+    "posting_hour",
+    "caption_length",
+    "hashtag_count",
+    "sentiment_score",
+    "creator_avg_engagement_rate"
+  ],
+  "feature_importances": [
+    {
+      "feature": "video_length",
+      "importance": 0.1271
+    },
+    {
+      "feature": "creator_avg_engagement_rate",
+      "importance": 0.125
+    },
+    {
+      "feature": "sound_popularity_index",
+      "importance": 0.1074
+    },
+    {
+      "feature": "has_trending_audio",
+      "importance": 0.0772
+    },
+    {
+      "feature": "visual_hook_retention_score",
+      "importance": 0.0731
+    },
+    {
+      "feature": "posting_hour",
+      "importance": 0.0681
+    },
+    {
+      "feature": "speech_tempo_wpm",
+      "importance": 0.0559
+    },
+    {
+      "feature": "hook_type",
+      "importance": 0.0517
+    },
+    {
+      "feature": "cut_frequency_per_min",
+      "importance": 0.0513
+    },
+    {
+      "feature": "caption_length",
+      "importance": 0.0466
+    },
+    {
+      "feature": "hashtag_count",
+      "importance": 0.0405
+    },
+    {
+      "feature": "sentiment_score",
+      "importance": 0.0377
+    },
+    {
+      "feature": "posting_day",
+      "importance": 0.0301
+    },
+    {
+      "feature": "content_niche",
+      "importance": 0.0288
+    },
+    {
+      "feature": "face_presence",
+      "importance": 0.0261
+    },
+    {
+      "feature": "creator_follower_tier",
+      "importance": 0.0207
+    },
+    {
+      "feature": "target_platform",
+      "importance": 0.0184
+    },
+    {
+      "feature": "video_resolution_quality",
+      "importance": 0.0143
+    }
+  ],
+  "confusion_matrix": [
+    [
+      360,
+      130,
+      14,
+      0
+    ],
+    [
+      154,
+      484,
+      180,
+      8
+    ],
+    [
+      5,
+      130,
+      310,
+      84
+    ],
+    [
+      0,
+      1,
+      53,
+      87
+    ]
+  ],
+  "classification_report": {
+    "Low": {
+      "precision": 0.6936416184971098,
+      "recall": 0.7142857142857143,
+      "f1-score": 0.7038123167155426,
+      "support": 504.0
+    },
+    "Medium": {
+      "precision": 0.6496644295302013,
+      "recall": 0.585956416464891,
+      "f1-score": 0.6161680458306811,
+      "support": 826.0
+    },
+    "High": {
+      "precision": 0.5565529622980251,
+      "recall": 0.5860113421550095,
+      "f1-score": 0.570902394106814,
+      "support": 529.0
+    },
+    "Viral (Top 10%)": {
+      "precision": 0.4860335195530726,
+      "recall": 0.6170212765957447,
+      "f1-score": 0.54375,
+      "support": 141.0
+    },
+    "accuracy": 0.6205,
+    "macro avg": {
+      "precision": 0.5964731324696022,
+      "recall": 0.6258186873753399,
+      "f1-score": 0.6086581891632594,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.624582718913564,
+      "recall": 0.6205,
+      "f1-score": 0.6211761649816403,
+      "support": 2000.0
+    }
+  },
+  "baseline_stats": {
+    "video_length": {
+      "mean": 62.1,
+      "std": 33.48,
+      "min": 5.0,
+      "max": 120.0
+    },
+    "speech_tempo_wpm": {
+      "mean": 160.53,
+      "std": 34.98,
+      "min": 100.0,
+      "max": 220.0
+    },
+    "cut_frequency_per_min": {
+      "mean": 16.53,
+      "std": 8.09,
+      "min": 3.0,
+      "max": 30.0
+    },
+    "visual_hook_retention_score": {
+      "mean": 0.56,
+      "std": 0.24,
+      "min": 0.15,
+      "max": 0.98
+    },
+    "has_trending_audio": {
+      "mean": 0.58,
+      "std": 0.49,
+      "min": 0.0,
+      "max": 1.0
+    },
+    "sound_popularity_index": {
+      "mean": 52.19,
+      "std": 27.32,
+      "min": 5.0,
+      "max": 99.0
+    },
+    "face_presence": {
+      "mean": 0.96,
+      "std": 0.66,
+      "min": 0.0,
+      "max": 2.0
+    },
+    "posting_hour": {
+      "mean": 11.47,
+      "std": 6.95,
+      "min": 0.0,
+      "max": 23.0
+    },
+    "caption_length": {
+      "mean": 194.54,
+      "std": 107.25,
+      "min": 10.0,
+      "max": 380.0
+    },
+    "hashtag_count": {
+      "mean": 8.49,
+      "std": 5.21,
+      "min": 0.0,
+      "max": 17.0
+    },
+    "sentiment_score": {
+      "mean": 0.05,
+      "std": 0.52,
+      "min": -0.85,
+      "max": 0.95
+    },
+    "creator_avg_engagement_rate": {
+      "mean": 8.82,
+      "std": 4.44,
+      "min": 1.2,
+      "max": 16.5
+    }
+  }
+}

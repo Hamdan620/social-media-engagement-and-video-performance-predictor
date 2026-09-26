@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+build/
+.vercel
+powershell.cmd
+.DS_Store
+*.pem
+npm-debug.log*
