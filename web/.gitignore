@@ -7,3 +7,5 @@ powershell.cmd
 .DS_Store
 *.pem
 npm-debug.log*
+
+.vercel

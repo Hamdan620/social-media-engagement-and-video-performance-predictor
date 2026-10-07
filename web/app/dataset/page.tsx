@@ -1,6 +1,6 @@
 "use client";
 
-import { BarChart3, Database, ShieldCheck, Cpu, Layers } from "lucide-react";
+import { Database, ShieldCheck, Cpu, Layers } from "lucide-react";
 
 export default function DatasetExplorerPage() {
   const datasetSummary = {
@@ -14,9 +14,9 @@ export default function DatasetExplorerPage() {
 
   const tierStats = [
     { name: "Medium Engagement", count: "4,129", pct: "41.3%", color: "text-amber-400", bg: "bg-amber-500/10 border-amber-500/30" },
-    { name: "High Engagement", count: "2,644", pct: "26.4%", color: "text-emerald-400", bg: "bg-emerald-500/10 border-emerald-500/30" },
+    { name: "High Engagement", count: "2,644", pct: "26.4%", color: "text-blue-400", bg: "bg-blue-500/10 border-blue-500/30" },
     { name: "Low Engagement", count: "2,522", pct: "25.2%", color: "text-rose-400", bg: "bg-rose-500/10 border-rose-500/30" },
-    { name: "Viral (Top 10%)", count: "705", pct: "7.1%", color: "text-purple-400", bg: "bg-purple-500/10 border-purple-500/30" },
+    { name: "Viral (Top 10%)", count: "705", pct: "7.1%", color: "text-emerald-400", bg: "bg-emerald-500/10 border-emerald-500/30" },
   ];
 
   const featureImportances = [
@@ -41,57 +41,58 @@ export default function DatasetExplorerPage() {
 
   return (
     <div className="space-y-6">
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-purple-950/60 via-slate-900 to-indigo-950/60 border border-purple-500/20 p-6 sm:p-8">
-        <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-semibold mb-3">
-            <Database className="w-3.5 h-3.5" />
-            <span>Dataset & Model Benchmark Explorer</span>
-          </div>
-          <h1 className="text-3xl font-black text-white tracking-tight">
-            10,000-Row Dataset & Machine Learning Architecture
-          </h1>
-          <p className="mt-2 text-sm text-slate-300">
-            Transparent empirical inspection of the short-form multimodal dataset, 5-Fold Stratified Cross-Validation metrics, and normalized confusion matrix.
-          </p>
+      {/* Header */}
+      <div className="border-b border-zinc-800 pb-5">
+        <div className="flex items-center gap-2 mb-1">
+          <span className="text-xs font-mono font-medium text-zinc-400 bg-zinc-900 border border-zinc-800 px-2 py-0.5 rounded">
+            Empirical Validation Audit
+          </span>
+          <span className="text-xs font-mono text-zinc-500">10,000 Verified Vectors</span>
         </div>
+        <h1 className="text-2xl sm:text-3xl font-bold text-zinc-100 tracking-tight">
+          Dataset Architecture & Cross-Validation Metrics
+        </h1>
+        <p className="text-xs sm:text-sm text-zinc-400 mt-1 max-w-3xl leading-relaxed">
+          Transparent inspection of the short-form multimodal dataset distributions, 5-Fold Stratified Cross-Validation results, and normalized confusion matrix.
+        </p>
       </div>
 
-      {/* Model Benchmark KPIs */}
+      {/* Benchmark KPIs Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
         {[
-          { label: "Total Records", val: datasetSummary.totalRecords, sub: "Multimodal Vectors" },
-          { label: "Features", val: datasetSummary.featureDimensions, sub: "Independent Vars" },
-          { label: "5-Fold CV Acc", val: datasetSummary.crossValAccuracy, sub: "Stratified Validation" },
+          { label: "Total Vectors", val: datasetSummary.totalRecords, sub: "Multimodal Records" },
+          { label: "Feature Matrix", val: datasetSummary.featureDimensions, sub: "Independent Vars" },
+          { label: "5-Fold CV Acc", val: datasetSummary.crossValAccuracy, sub: "Stratified Mean" },
           { label: "Holdout Acc", val: datasetSummary.testAccuracy, sub: "20% Holdout Test" },
-          { label: "Weighted F1", val: datasetSummary.weightedF1, sub: "Harmonic Balance" },
-          { label: "Macro F1", val: datasetSummary.macroF1, sub: "Equal Class Weight" },
+          { label: "Weighted F1", val: datasetSummary.weightedF1, sub: "Harmonic Average" },
+          { label: "Macro F1", val: datasetSummary.macroF1, sub: "Class-Balanced" },
         ].map((kpi, i) => (
-          <div key={i} className="bg-slate-900/80 border border-slate-800 rounded-2xl p-4">
-            <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1">
+          <div key={i} className="bg-zinc-900 border border-zinc-800 rounded-lg p-3.5">
+            <span className="text-[10px] uppercase font-mono text-zinc-500 tracking-wider block mb-1">
               {kpi.label}
             </span>
-            <div className="text-xl font-black text-white tracking-tight">{kpi.val}</div>
-            <span className="text-[10px] text-slate-500 mt-1 block">{kpi.sub}</span>
+            <div className="text-lg font-mono font-bold text-zinc-100 tracking-tight">{kpi.val}</div>
+            <span className="text-[10px] text-zinc-500 mt-0.5 block">{kpi.sub}</span>
           </div>
         ))}
       </div>
 
       {/* Class Distribution Breakdown */}
-      <div className="bg-slate-900/80 border border-slate-800 rounded-3xl p-6">
-        <h3 className="text-base font-bold text-white mb-1 flex items-center gap-2">
-          <Layers className="w-4 h-4 text-purple-400" />
+      <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 shadow-sm">
+        <h3 className="text-sm font-semibold text-zinc-100 mb-1 flex items-center gap-2">
+          <Layers className="w-4 h-4 text-zinc-400" />
           <span>Balanced Tier Distribution (N = 10,000)</span>
         </h3>
-        <p className="text-xs text-slate-400 mb-4">
-          Natural distribution modeling organic algorithm reach: Medium as median baseline, with Viral strictly isolated to the elite top ~7-10%.
+        <p className="text-xs text-zinc-400 mb-4">
+          Natural distribution modeling realistic platform reach: Medium as median baseline, with Viral strictly isolated to the top ~7-10%.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {tierStats.map((t, idx) => (
-            <div key={idx} className={`p-4 rounded-2xl border ${t.bg}`}>
-              <span className={`text-xs font-bold ${t.color}`}>{t.name}</span>
-              <div className="text-2xl font-black text-white mt-1">{t.count}</div>
-              <span className="text-xs text-slate-400">{t.pct} of entire dataset</span>
+            <div key={idx} className={`p-4 rounded-lg border ${t.bg}`}>
+              <span className={`text-xs font-semibold ${t.color}`}>{t.name}</span>
+              <div className="text-2xl font-mono font-bold text-zinc-100 mt-1">{t.count}</div>
+              <span className="text-xs text-zinc-400 font-mono">{t.pct} of total records</span>
             </div>
           ))}
         </div>
@@ -100,13 +101,13 @@ export default function DatasetExplorerPage() {
       {/* 2-Column Grid: Feature Importances & Confusion Matrix */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Global Feature Importance */}
-        <div className="bg-slate-900/80 border border-slate-800 rounded-3xl p-6">
-          <h3 className="text-base font-bold text-white mb-1 flex items-center gap-2">
-            <Cpu className="w-4 h-4 text-emerald-400" />
+        <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 shadow-sm">
+          <h3 className="text-sm font-semibold text-zinc-100 mb-1 flex items-center gap-2">
+            <Cpu className="w-4 h-4 text-zinc-400" />
             <span>Random Forest Gini Feature Importances</span>
           </h3>
-          <p className="text-xs text-slate-400 mb-4">
-            Trained ensemble weights across 120 decision trees demonstrating the dominance of runtime and timing.
+          <p className="text-xs text-zinc-400 mb-4">
+            Trained ensemble weights across 120 decision trees showing runtime and hook as primary predictors.
           </p>
 
           <div className="space-y-3">
@@ -116,12 +117,12 @@ export default function DatasetExplorerPage() {
               return (
                 <div key={idx} className="space-y-1">
                   <div className="flex justify-between text-xs">
-                    <span className="text-slate-300 font-medium">{item.feature}</span>
-                    <span className="font-mono text-purple-400 font-bold">{(item.score * 100).toFixed(1)}%</span>
+                    <span className="text-zinc-300">{item.feature}</span>
+                    <span className="font-mono text-zinc-400 font-semibold">{(item.score * 100).toFixed(1)}%</span>
                   </div>
-                  <div className="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                  <div className="h-1.5 w-full bg-zinc-800 rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full"
+                      className="h-full bg-zinc-400 rounded-full"
                       style={{ width: `${width}%` }}
                     ></div>
                   </div>
@@ -132,19 +133,19 @@ export default function DatasetExplorerPage() {
         </div>
 
         {/* Normalized Confusion Matrix */}
-        <div className="bg-slate-900/80 border border-slate-800 rounded-3xl p-6">
-          <h3 className="text-base font-bold text-white mb-1 flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-indigo-400" />
+        <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 shadow-sm">
+          <h3 className="text-sm font-semibold text-zinc-100 mb-1 flex items-center gap-2">
+            <ShieldCheck className="w-4 h-4 text-zinc-400" />
             <span>Normalized Confusion Matrix (%)</span>
           </h3>
-          <p className="text-xs text-slate-400 mb-4">
-            Evaluated on holdout test partition (N = 2,000). Diagonal cells represent correct predictions.
+          <p className="text-xs text-zinc-400 mb-4">
+            Evaluated on holdout test partition (N = 2,000). Diagonal cells represent correct classifications.
           </p>
 
           <div className="overflow-x-auto">
             <table className="w-full text-xs text-center border-collapse">
               <thead>
-                <tr className="border-b border-slate-800 text-slate-400">
+                <tr className="border-b border-zinc-800 text-zinc-400">
                   <th className="py-2.5 px-3 text-left">Actual Class</th>
                   <th className="py-2.5 px-2">Pred Low</th>
                   <th className="py-2.5 px-2">Pred Med</th>
@@ -152,22 +153,22 @@ export default function DatasetExplorerPage() {
                   <th className="py-2.5 px-2">Pred Viral</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-800/60 font-mono">
+              <tbody className="divide-y divide-zinc-800 font-mono">
                 {confusionMatrix.map((row, i) => (
-                  <tr key={i} className="hover:bg-slate-800/30">
-                    <td className="py-3 px-3 text-left font-sans font-semibold text-slate-300">
+                  <tr key={i} className="hover:bg-zinc-800/40">
+                    <td className="py-3 px-3 text-left font-sans font-medium text-zinc-300">
                       {row.actual}
                     </td>
-                    <td className={`py-3 px-2 rounded-lg font-bold ${row.actual.includes("Low") ? "bg-purple-600/30 text-purple-200" : "text-slate-400"}`}>
+                    <td className={`py-3 px-2 rounded font-semibold ${row.actual.includes("Low") ? "bg-zinc-800 text-zinc-100" : "text-zinc-500"}`}>
                       {row.predLow}%
                     </td>
-                    <td className={`py-3 px-2 rounded-lg font-bold ${row.actual.includes("Medium") ? "bg-purple-600/30 text-purple-200" : "text-slate-400"}`}>
+                    <td className={`py-3 px-2 rounded font-semibold ${row.actual.includes("Medium") ? "bg-zinc-800 text-zinc-100" : "text-zinc-500"}`}>
                       {row.predMed}%
                     </td>
-                    <td className={`py-3 px-2 rounded-lg font-bold ${row.actual.includes("High") ? "bg-purple-600/30 text-purple-200" : "text-slate-400"}`}>
+                    <td className={`py-3 px-2 rounded font-semibold ${row.actual.includes("High") ? "bg-zinc-800 text-zinc-100" : "text-zinc-500"}`}>
                       {row.predHigh}%
                     </td>
-                    <td className={`py-3 px-2 rounded-lg font-bold ${row.actual.includes("Viral") ? "bg-purple-600/30 text-purple-200" : "text-slate-400"}`}>
+                    <td className={`py-3 px-2 rounded font-semibold ${row.actual.includes("Viral") ? "bg-zinc-800 text-zinc-100" : "text-zinc-500"}`}>
                       {row.predViral}%
                     </td>
                   </tr>
@@ -176,8 +177,8 @@ export default function DatasetExplorerPage() {
             </table>
           </div>
 
-          <div className="mt-4 p-3 rounded-xl bg-slate-800/40 border border-slate-700/60 text-[11px] text-slate-400 leading-relaxed">
-            💡 <strong>Matrix Analysis:</strong> Actual Viral videos show zero contamination with Low predictions, demonstrating sharp separation on strong retention signals.
+          <div className="mt-4 p-3 rounded bg-zinc-950/60 border border-zinc-800 text-[11px] text-zinc-400 leading-relaxed">
+            💡 <strong>Evaluation Finding:</strong> Actual Viral videos show zero misclassifications into Low, demonstrating robust mathematical boundary separation.
           </div>
         </div>
       </div>
