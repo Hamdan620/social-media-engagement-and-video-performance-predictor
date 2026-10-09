@@ -1,0 +1,357 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R 4 0 R]
+  /Count 2
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Resources 9 0 R
+  /Contents 10 0 R
+>>
+endobj
+4 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Resources 9 0 R
+  /Contents 11 0 R
+>>
+endobj
+5 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+6 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica-Bold
+>>
+endobj
+7 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica-Oblique
+>>
+endobj
+8 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Courier
+>>
+endobj
+9 0 obj
+<<
+  /Font <<
+    /F1 5 0 R
+    /F2 6 0 R
+    /F3 7 0 R
+    /F4 8 0 R
+  >>
+>>
+endobj
+10 0 obj
+<<
+  /Length 3706
+>>
+stream
+BT
+/F2 9.5 Tf
+0.3 0.35 0.4 rg
+40 808 Td
+(ACADEMIC MAJOR PROJECT SYNOPSIS - B.TECH / B.E. / BCA / MCA / M.TECH) Tj
+ET
+0.1 0.15 0.25 rg
+40 800 515 1.5 re f
+BT
+/F2 13 Tf
+0 0 0 rg
+40 780 Td
+(Social Media Engagement & Video Performance Predictor) Tj
+/F3 9 Tf
+0.2 0.2 0.2 rg
+0 -15 Td
+(Domain: Machine Learning & NLP  |  Platform: Cloud Next.js Web App  |  Academic Year: 2026) Tj
+ET
+0.88 0.91 0.95 rg
+40 742 515 18 re f
+BT
+/F2 8.5 Tf
+0.1 0.2 0.35 rg
+48 747 Td
+(Status: Production Ready  |  Model Accuracy: R2 = 0.88  |  Dataset: 10,000 Vectors Validated) Tj
+ET
+
+BT
+/F2 10.5 Tf
+0.08 0.12 0.2 rg
+40 720 Td
+(1. INTRODUCTION) Tj
+/F1 8.5 Tf
+0.15 0.15 0.15 rg
+0 -13 Td
+(Short-form video has become the dominant medium of global digital content delivery across) Tj
+0 -11 Td
+(TikTok, Instagram Reels, and YouTube Shorts. Algorithmic distribution in these platforms is) Tj
+0 -11 Td
+(governed by retention curves, initial hook velocity, viewer drop-off, and audience velocity.) Tj
+0 -11 Td
+(This project introduces an end-to-end data science and machine learning platform that predicts) Tj
+0 -11 Td
+(video engagement, decomposes view trajectories into organic follower base vs. algorithmic FYP) Tj
+0 -11 Td
+(discovery reach, and performs automated Natural Language Processing \(NLP\) audits on scripts.) Tj
+ET
+
+BT
+/F2 10.5 Tf
+0.08 0.12 0.2 rg
+40 635 Td
+(2. PROBLEM STATEMENT) Tj
+/F1 8.5 Tf
+0.15 0.15 0.15 rg
+0 -13 Td
+(Existing analytics solutions operate retrospectively--reporting metrics only after content has) Tj
+0 -11 Td
+(already underperformed. Creators lack pre-production predictive intelligence to evaluate whether) Tj
+0 -11 Td
+(their video hooks, production pacing, hashtags, audio, and schedule will capture algorithmic reach) Tj
+0 -11 Td
+(before committing significant creative time and financial resources to recording and editing.) Tj
+ET
+
+BT
+/F2 10.5 Tf
+0.08 0.12 0.2 rg
+40 565 Td
+(3. PROJECT OBJECTIVES) Tj
+/F1 8.5 Tf
+0.15 0.15 0.15 rg
+0 -13 Td
+(- Pre-Production Engagement Forecasting: Predict engagement rate, watch time, shares, and retention.) Tj
+0 -11 Td
+(- Dual-Channel View Attribution: Decompose views into Follower Base vs. Algorithmic FYP Discovery.) Tj
+0 -11 Td
+(- NLP Script Quality & Retention Diagnostics: Score Hook \(0-5s\), Body Pacing \(150 WPM\), and CTA.) Tj
+0 -11 Td
+(- Automated Script Rewrites: Suggest 3 data-backed alternative hooks to eliminate cliches.) Tj
+0 -11 Td
+(- Explainable AI \(XAI\): Provide SHAP feature attribution showing positive and negative drivers.) Tj
+0 -11 Td
+(- Cloud Web Platform: Deploy an accessible, responsive, academic-grade web app on Vercel.) Tj
+ET
+
+BT
+/F2 10.5 Tf
+0.08 0.12 0.2 rg
+40 475 Td
+(4. HARDWARE & SOFTWARE REQUIREMENTS) Tj
+ET
+0.94 0.96 0.98 rg
+40 375 515 88 re f
+0.8 0.85 0.9 RG
+0.8 w
+40 375 515 88 re S
+40 419 515 0.1 re S
+160 375 0.1 88 re S
+BT
+/F2 8.5 Tf
+0.1 0.15 0.25 rg
+48 445 Td
+(Hardware Requirements) Tj
+/F1 8 Tf
+0.2 0.2 0.2 rg
+170 448 Td
+(Processor: Intel Core i5 / AMD Ryzen 5 or higher | RAM: 8 GB min \(16 GB rec\)) Tj
+0 -11 Td
+(Storage: 256 GB SSD/HDD | Active Broadband Internet Connectivity) Tj
+ET
+BT
+/F2 8.5 Tf
+0.1 0.15 0.25 rg
+48 400 Td
+(Software Requirements) Tj
+/F1 8 Tf
+0.2 0.2 0.2 rg
+170 405 Td
+(OS: Windows 10/11, Linux, macOS | Languages: Python 3.10+, TypeScript, Node.js) Tj
+0 -11 Td
+(ML: Scikit-Learn \(Random Forest, Gradient Boosting\), NumPy, Pandas, Joblib) Tj
+0 -11 Td
+(NLP: Rule-based linguistic tokenization, sentiment matching, pacing analyzer) Tj
+0 -11 Td
+(Frontend: Next.js 14, React 18, Tailwind CSS | Cloud: Vercel, Git & GitHub) Tj
+ET
+
+0.8 0.8 0.8 rg
+40 50 515 0.8 re f
+BT
+/F1 7.5 Tf
+0.4 0.4 0.4 rg
+40 38 Td
+(Project Synopsis - Page 1 of 2  |  Social Media Engagement & Video Performance Predictor) Tj
+ET
+endstream
+endobj
+11 0 obj
+<<
+  /Length 3092
+>>
+stream
+BT
+/F2 9.5 Tf
+0.3 0.35 0.4 rg
+40 808 Td
+(ACADEMIC MAJOR PROJECT SYNOPSIS - CONTINUED) Tj
+ET
+0.1 0.15 0.25 rg
+40 800 515 1.5 re f
+
+BT
+/F2 10.5 Tf
+0.08 0.12 0.2 rg
+40 780 Td
+(5. SYSTEM ARCHITECTURE & PIPELINE) Tj
+ET
+0.96 0.97 0.98 rg
+40 645 515 125 re f
+0.8 0.85 0.9 RG
+0.8 w
+40 645 515 125 re S
+BT
+/F4 7.5 Tf
+0.1 0.15 0.2 rg
+48 755 Td
+([1] USER INPUTS: Follower Count \(0 to 1M+\), Script Text, Platform, Niche, Schedule) Tj
+0 -13 Td
+(     | ) Tj
+0 -13 Td
+(     v) Tj
+0 -13 Td
+([2] PROCESSING CORE: NLP Script Analyzer \(Hook, Pacing, CTA\) + ML Multi-Regression) Tj
+0 -13 Td
+(     |  - Hook Tension: flags cliches, detects curiosity gaps, generates 3 rewrites) Tj
+0 -13 Td
+(     |  - Pacing Engine: measures WPM delivery against 150 WPM benchmark) Tj
+0 -13 Td
+(     |  - Algorithmic Discovery: models FYP reach multipliers vs. Follower Base) Tj
+0 -13 Td
+(     v) Tj
+0 -13 Td
+([3] OUTPUT DASHBOARD: Dual-Channel Views, Retention KPI, Audit Ledger, SHAP Impacts) Tj
+ET
+
+BT
+/F2 10.5 Tf
+0.08 0.12 0.2 rg
+40 625 Td
+(6. DATASET & MACHINE LEARNING MODEL EVALUATION) Tj
+/F1 8.5 Tf
+0.15 0.15 0.15 rg
+0 -13 Td
+(An exhaustive dataset of 10,000 synthesized and preprocessed short-form video records was) Tj
+0 -11 Td
+(developed modeling authentic algorithmic mechanics across 6 niches \(Tech, Comedy, Fitness,) Tj
+0 -11 Td
+(Education, Finance, Lifestyle\) and 3 platforms \(TikTok, Instagram Reels, YouTube Shorts\).) Tj
+0 -11 Td
+(Supervised regression modeling utilizing Random Forest and Gradient Boosting algorithms) Tj
+0 -11 Td
+(achieved high predictive accuracy \(R2 approx 0.88\), with low Mean Absolute Error \(MAE\).) Tj
+ET
+
+BT
+/F2 10.5 Tf
+0.08 0.12 0.2 rg
+40 545 Td
+(7. EXPECTED OUTCOMES & APPLICATIONS) Tj
+/F1 8.5 Tf
+0.15 0.15 0.15 rg
+0 -13 Td
+(- Pre-Flight Performance Simulation: Enables creators to test scripts and settings before filming.) Tj
+0 -11 Td
+(- Objective Script Optimization: Prunes filler words and optimizes the critical 0-5s retention window.) Tj
+0 -11 Td
+(- Dual View Attribution: Differentiates guaranteed follower reach from viral algorithmic discovery.) Tj
+0 -11 Td
+(- Commercial Utility: Suitable for influencers, digital marketing agencies, and media researchers.) Tj
+ET
+
+BT
+/F2 10.5 Tf
+0.08 0.12 0.2 rg
+40 470 Td
+(8. VERIFICATION LINKS & DEPLOYMENT) Tj
+/F1 8.5 Tf
+0.15 0.15 0.15 rg
+0 -13 Td
+(- Live Cloud Platform: https://web-beta-lyart-5xnw34e0lc.vercel.app) Tj
+0 -11 Td
+(- GitHub Repository: https://github.com/Hamdan620/social-media-engagement-and-video-performance-predictor) Tj
+ET
+
+BT
+/F2 10.5 Tf
+0.08 0.12 0.2 rg
+40 415 Td
+(9. REFERENCES) Tj
+/F1 8 Tf
+0.2 0.2 0.2 rg
+0 -13 Td
+(1. Breiman, L. \(2001\). Random Forests. Machine Learning, 45\(1\), 5-32.) Tj
+0 -11 Td
+(2. Lundberg, S. M., & Lee, S. I. \(2017\). A Unified Approach to Interpreting Model Predictions. NeurIPS.) Tj
+0 -11 Td
+(3. Bird, S., Klein, E., & Loper, E. \(2009\). Natural Language Processing with Python. O'Reilly Media.) Tj
+ET
+
+0.8 0.8 0.8 rg
+40 50 515 0.8 re f
+BT
+/F1 7.5 Tf
+0.4 0.4 0.4 rg
+40 38 Td
+(Project Synopsis - Page 2 of 2  |  File Size: Compliant < 10 MB  |  Examiner Review Copy) Tj
+ET
+endstream
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000009 00000 n 
+0000000062 00000 n 
+0000000131 00000 n 
+0000000252 00000 n 
+0000000373 00000 n 
+0000000449 00000 n 
+0000000530 00000 n 
+0000000614 00000 n 
+0000000688 00000 n 
+0000000781 00000 n 
+0000004542 00000 n 
+trailer
+<<
+  /Size 12
+  /Root 1 0 R
+>>
+startxref
+7689
+%%EOF

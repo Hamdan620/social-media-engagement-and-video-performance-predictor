@@ -9,7 +9,8 @@ export default function Header() {
 
   const links = [
     { href: "/", label: "Performance Predictor", icon: BarChart2 },
-    { href: "/dataset", label: "Dataset & Model Validation", icon: Database },
+    { href: "/dataset", label: "Dataset & Validation", icon: Database },
+    { href: "/synopsis", label: "Project Synopsis", icon: FileText },
   ];
 
   return (

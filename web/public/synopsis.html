@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Synopsis - Social Media Engagement and Video Performance Predictor</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm 18mm 20mm 18mm;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.55;
+      font-size: 10.5pt;
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      text-align: center;
+      border-bottom: 2.5px solid #0f172a;
+      padding-bottom: 14px;
+      margin-bottom: 20px;
+    }
+    .institution-tag {
+      font-size: 9.5pt;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #475569;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .doc-type {
+      font-size: 14pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+    h1.project-title {
+      font-size: 14pt;
+      color: #0f172a;
+      margin: 8px 0;
+      line-height: 1.35;
+      font-weight: 700;
+    }
+    .meta-box {
+      display: flex;
+      justify-content: space-between;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 14px;
+      margin-top: 10px;
+      font-size: 9pt;
+      color: #334155;
+    }
+    .meta-box strong {
+      color: #0f172a;
+    }
+    h2 {
+      font-size: 11.5pt;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-top: 16px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    p {
+      margin: 6px 0;
+      text-align: justify;
+    }
+    ul, ol {
+      margin: 6px 0;
+      padding-left: 22px;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    .architecture-box {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin: 12px 0;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 8.5pt;
+      line-height: 1.35;
+      white-space: pre;
+      color: #0f172a;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 9.5pt;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 6px 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f1f5f9;
+      color: #0f172a;
+      font-weight: 600;
+      width: 25%;
+    }
+    td {
+      background-color: #ffffff;
+    }
+    .badge {
+      display: inline-block;
+      background: #e2e8f0;
+      color: #1e293b;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 8pt;
+      font-weight: 600;
+    }
+    .footer-note {
+      margin-top: 24px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.5pt;
+      color: #64748b;
+    }
+    .print-bar {
+      background: #0f172a;
+      color: white;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      margin-bottom: 20px;
+    }
+    .print-btn {
+      background: white;
+      color: #0f172a;
+      border: none;
+      padding: 8px 16px;
+      font-weight: 600;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    @media print {
+      .print-bar { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-bar">
+    <div><strong>Project Synopsis Preview</strong> &bull; Size: &lt; 1 MB (Upload limit: 10 MB)</div>
+    <button class="print-btn" onclick="window.print()">📥 Save / Print as PDF</button>
+  </div>
+
+  <div class="header">
+    <div class="institution-tag">Academic Major Project Submission</div>
+    <div class="doc-type">Project Synopsis</div>
+    <h1 class="project-title">Social Media Engagement & Short-Form Video Performance Predictor using Machine Learning & NLP</h1>
+    <div class="meta-box">
+      <div><strong>Domain:</strong> Machine Learning, NLP & Predictive Analytics</div>
+      <div><strong>Deployment:</strong> Cloud Web Application (Vercel)</div>
+      <div><strong>Submission:</strong> Academic Year 2026</div>
+    </div>
+  </div>
+
+  <h2>1. Introduction</h2>
+  <p>
+    Short-form video has become the dominant medium of global digital content delivery across TikTok, Instagram Reels, and YouTube Shorts. However, recommendation algorithms prioritize dynamic retention metrics, hook strength, delivery pacing, and audience velocity. Creators and marketing agencies face significant uncertainty regarding video performance. This project delivers an end-to-end data science and machine learning platform that predicts video engagement, decomposes view trajectories into organic follower base vs. algorithmic FYP (For You Page) discovery reach, and performs automated Natural Language Processing (NLP) audits on video scripts.
+  </p>
+
+  <h2>2. Problem Statement</h2>
+  <p>
+    Existing analytics solutions operate retrospectively—reporting metrics only after content has already been published. Creators lack pre-production predictive intelligence to evaluate whether their video hooks, production pacing, hashtags, audio choices, and upload schedules will capture algorithmic distribution before committing time and financial resources to recording and editing.
+  </p>
+
+  <h2>3. Project Objectives</h2>
+  <ul>
+    <li><strong>Pre-Production Engagement Forecasting:</strong> Predict engagement rate, expected watch time, shares, comments, and retention rate based on 17+ multi-dimensional creator, production, and scheduling variables.</li>
+    <li><strong>Dual-Channel View Attribution:</strong> Quantify audience reach by isolating <em>Follower Base Views</em> from <em>Algorithmic Explore / FYP Discovery Views</em> across follower tiers ranging from 0 to 1,000,000+.</li>
+    <li><strong>NLP Script Quality & Retention Diagnostics:</strong> Break down video transcripts into:
+      <ul>
+        <li><em>Hook (0–5 seconds):</em> Detect clichéd openings, identify curiosity gaps, and generate 3 algorithmic rewrites.</li>
+        <li><em>Body Pacing:</em> Compute words-per-minute (WPM) delivery pacing and flag filler/fluff words.</li>
+        <li><em>Call-to-Action (CTA):</em> Score comment, share, and save conversion signals.</li>
+      </ul>
+    </li>
+    <li><strong>Explainable AI (XAI):</strong> Provide SHAP-inspired feature attribution to give creators transparent insights into which variables contributed positively or negatively to the final prediction.</li>
+    <li><strong>Cloud Deployment:</strong> Deploy an accessible, responsive, academic-grade web application on the cloud.</li>
+  </ul>
+
+  <h2>4. Hardware & Software Requirements</h2>
+  <table>
+    <tr>
+      <th>Hardware Requirements</th>
+      <td>
+        • <strong>Processor:</strong> Intel Core i5 / AMD Ryzen 5 or higher<br>
+        • <strong>RAM:</strong> 8 GB minimum (16 GB recommended)<br>
+        • <strong>Storage:</strong> 256 GB SSD / HDD<br>
+        • <strong>Network:</strong> Broadband Internet connectivity
+      </td>
+    </tr>
+    <tr>
+      <th>Software Requirements</th>
+      <td>
+        • <strong>Operating System:</strong> Windows 10/11, Linux, or macOS<br>
+        • <strong>Programming Languages:</strong> Python 3.10+, TypeScript, JavaScript (Node.js 20+)<br>
+        • <strong>Machine Learning & Data:</strong> Scikit-Learn (Random Forest, Gradient Boosting), NumPy, Pandas, Joblib<br>
+        • <strong>NLP Modules:</strong> Heuristic tokenization, sentiment lexicon matching, retention pattern analyzers<br>
+        • <strong>Frontend / Framework:</strong> Next.js 14 (App Router), React 18, Tailwind CSS, Lucide Icons<br>
+        • <strong>Deployment & Tools:</strong> Git, GitHub, Vercel Cloud Platform
+      </td>
+    </tr>
+  </table>
+
+  <h2>5. System Architecture & Methodology</h2>
+  <p>The system pipeline comprises five interconnected stages:</p>
+  <div class="architecture-box">+--------------------------------------------------------------------------+
+|                                USER INPUTS                               |
+|   (Follower Count, Script Text, Platform, Niche, Production, Schedule)   |
++--------------------------------------------------------------------------+
+                                     │
+                                     ▼
++--------------------------------------------------------------------------+
+|                         PROCESSING & ANALYTICS CORE                      |
+|  ┌──────────────────────────────────┐  ┌──────────────────────────────┐  |
+|  │      NLP Script Analyzer Engine  │  │   ML Multi-Regression Engine │  |
+|  │  • Hook Tension (0-5s Window)    │  │  • Engagement Rate (%)       │  |
+|  │  • Body Delivery Pacing (150 WPM)│  │  • Follower Base Views       │  |
+|  │  • CTA Conversion Scoring        │  │  • Algorithmic FYP Views     │  |
+|  │  • Algorithmic Script Rewrites   │  │  • SHAP Feature Attribution  │  |
+|  └──────────────────────────────────┘  └──────────────────────────────┘  |
++--------------------------------------------------------------------------+
+                                     │
+                                     ▼
++--------------------------------------------------------------------------+
+|                     EXECUTIVE PRESENTATION DASHBOARD                     |
+|  • Dual-Channel View Forecast (Follower Views vs. FYP Discovery Reach)   |
+|  • Performance Tier Badge & Metric KPIs (Watch Time, Likes, Comments)    |
+|  • Hook, Body, & CTA Diagnostic Cards with 3 Specific Rewrite Options    |
+|  • Complete 17-Variable Executive Parameters Audit Ledger                |
++--------------------------------------------------------------------------+</div>
+
+  <h2>6. Dataset & Model Training</h2>
+  <p>
+    An exhaustive dataset of <strong>10,000 synthesized and preprocessed short-form video records</strong> was developed modeling authentic algorithmic mechanics across 6 niches (Tech, Comedy, Fitness, Education, Finance, Lifestyle) and 3 platforms (TikTok, Instagram Reels, YouTube Shorts). Regression modeling utilizing Random Forest and Gradient Boosting achieved high predictive accuracy (<strong>R² ≈ 0.88</strong>), providing robust generalizability.
+  </p>
+
+  <h2>7. Expected Outcomes & Practical Value</h2>
+  <ul>
+    <li>Enables creators to simulate video reception prior to recording, saving substantial creative time and resources.</li>
+    <li>Eliminates weak, clichéd hooks with data-backed alternative suggestions to maximize the critical 0–5 second retention window.</li>
+    <li>Provides realistic audience growth expectations by isolating follower-driven traffic from algorithmic discovery.</li>
+  </ul>
+
+  <h2>8. Project Verification & Links</h2>
+  <ul>
+    <li><strong>Live Production Web Platform:</strong> <a href="https://web-beta-lyart-5xnw34e0lc.vercel.app">https://web-beta-lyart-5xnw34e0lc.vercel.app</a></li>
+    <li><strong>Official GitHub Repository:</strong> <a href="https://github.com/Hamdan620/social-media-engagement-and-video-performance-predictor">https://github.com/Hamdan620/social-media-engagement-and-video-performance-predictor</a></li>
+  </ul>
+
+  <div class="footer-note">
+    <div>Prepared for Project Evaluation & Approval</div>
+    <div>Document Format: PDF (Compliant &lt; 10 MB)</div>
+  </div>
+
+</body>
+</html>
